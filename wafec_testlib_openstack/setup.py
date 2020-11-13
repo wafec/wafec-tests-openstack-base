@@ -1,19 +1,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="wafec.openstack.testlib",
-    version="0.0.7",
+    name="wafec-testlib-openstack",
+    version="0.1.1",
     author="Wallace",
     author_email="wallacefcardoso@gmail.com",
     packages=find_packages("src"),
-    namespace_packages=['wafec.openstack.testlib'],
+    namespace_packages=['wafec_testlib_openstack'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent"
-    ],
-    install_requires=[
-
     ],
     entry_points={
         'console_scripts': [
