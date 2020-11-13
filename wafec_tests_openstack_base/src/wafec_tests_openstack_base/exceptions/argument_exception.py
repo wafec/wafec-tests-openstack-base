@@ -1,5 +1,5 @@
 from .exception_base import ExceptionBase
 
 
-class FaultNotFoundException(ExceptionBase):
+class ArgumentException(ExceptionBase):
     pass

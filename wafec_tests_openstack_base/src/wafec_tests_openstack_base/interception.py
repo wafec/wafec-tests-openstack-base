@@ -24,7 +24,7 @@ for operator in operators:
 def generate_key(*args):
     if args and len(args) and args != (None,):
         result = '-'.join([str(arg) for arg in args if arg is not None])
-        return base64.b64encode(str.encode(result))
+        return base64.b64encode(str.encode(result)).decode('ascii')
     else:
         return None
 
